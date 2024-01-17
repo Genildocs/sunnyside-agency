@@ -1,0 +1,62 @@
+header {
+  background-image: url("../../assets/mobile/image-header.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: space-between;
+  //   align-items: center;
+  padding: 1rem 1.5rem;
+  min-height: 100vh;
+
+  @media (min-width: 768px) {
+    background-image: url("../../assets/desktop/image-header.jpg");
+    background-size: cover;
+  }
+
+  nav {
+    position: relative;
+
+    @media (min-width: 768px) {
+      display: none;
+    }
+  }
+}
+
+ul {
+  gap: 1.5rem;
+  list-style: none;
+
+  .list_item {
+    a {
+      text-decoration: none;
+      font-size: 1.8rem;
+    }
+  }
+}
+
+//BTN MENU
+
+.btn_menu {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+//Ativado ao clicar no botão menu
+.clippath {
+  clip-path: polygon(0 10%, 86% 10%, 100% 0, 100% 14%, 100% 100%, 0 100%);
+  background-color: var(--White);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+  height: 300px;
+  position: absolute;
+  top: 5%;
+  right: 0;
+}
+
+.utility {
+  display: none;
+}
