@@ -6,11 +6,11 @@ export default function Transform() {
     <section>
       <picture>
         <source
-          srcSet="src/assets/desktop/image-transform.jpg"
+          srcSet="../../src/assets/desktop/image-transform.jpg"
           media="(min-width: 500px)"
         />
         <img
-          src="src/assets/mobile/image-transform.jpg"
+          src="../../src/assets/mobile/image-transform.jpg"
           alt="imagem de um ovo"
         />
       </picture>

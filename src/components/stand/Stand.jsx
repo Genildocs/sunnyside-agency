@@ -6,11 +6,11 @@ export default function Stand() {
     <section>
       <picture>
         <source
-          srcSet="src/assets/desktop/image-stand-out.jpg"
+          srcSet="../../src/assets/desktop/image-stand-out.jpg"
           media="(min-width: 500px)"
         />
         <img
-          src="src/assets/mobile/image-stand-out.jpg"
+          src="../../src/assets/mobile/image-stand-out.jpg"
           alt="imagem de uma taça"
         />
       </picture>
