@@ -2,7 +2,7 @@
   // Primary
 
   --Soft-red: hsl(7, 99%, 70%);
-  --Yellow: hsl(51, 100%, 49%);
+  --Yellow: #fad400;
   --Dark-desaturated-cyan: hsl(167, 40%, 24%);
   --Dark-blue: hsl(198, 62%, 26%);
   --Dark-moderate-cyan: hsl(168, 34%, 41%);
@@ -28,6 +28,13 @@ html {
   font-size: 62.5%;
 }
 
+body {
+  overflow: hidden;
+
+  @media (min-width: 768px) {
+    overflow: initial;
+  }
+}
 // <uniquifier>: Use a uniquifier for the class name
 // <weight>: Use a value from 100 to 900
 
