@@ -1,17 +1,17 @@
-import React from 'react';
-import './Photography.scss';
+import React from "react";
+import "./Photography.scss";
 
 export default function Photography() {
   return (
     <section>
       <picture className="picture_photography">
         <source
-          srcSet="../../src/assets/desktop/image-photography.jpg"
+          srcSet="/src/assets/desktop/image-photography.jpg"
           media="(min-width: 500px)"
         />
         <img
-          src="../../src/assets/mobile/image-photography.jpg"
-          alt="imagem de um ovo"
+          src="/src/assets/mobile/image-photography.jpg"
+          alt="image of an orange"
         />
       </picture>
       <div className="photography_text">

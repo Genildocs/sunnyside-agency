@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
-import React, { useState } from 'react';
-import './Nav.scss';
-import { motion } from 'framer-motion';
+import React, { useState, useEffect } from "react";
+import "./Nav.scss";
+import { motion } from "framer-motion";
 
 const Path = (props) => (
   <motion.path
@@ -14,17 +14,17 @@ const Path = (props) => (
 );
 export default function Nav() {
   const [open, setOpen] = useState(false);
-  const menu = ['About', 'Services', 'Projects', 'Contact'];
+  const menu = ["About", "Services", "Projects", "Contact"];
   const variantsUl = {
     open: {
       opacity: 1,
-      visibility: 'visible',
+      visibility: "visible",
       y: 0,
       transition: { duration: 0.5 },
     },
     closed: {
       opacity: 0,
-      visibility: 'hidden',
+      visibility: "hidden",
       y: -30,
       transition: {
         visibility: { delay: 0.5 },
@@ -44,8 +44,16 @@ export default function Nav() {
       transition: { duration: 0.5 },
     },
   };
+
+  useEffect(() => {
+    if (open) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "unset";
+    }
+  }, [open]);
   return (
-    <motion.nav initial={false} animate={open ? 'open' : 'closed'}>
+    <motion.nav initial={false} animate={open ? "open" : "closed"}>
       <motion.ul variants={variantsUl}>
         {menu.map((item, index) => (
           <motion.li
@@ -64,8 +72,8 @@ export default function Nav() {
         <svg width={23} height={23} viewBox="0 0 23 23">
           <Path
             variants={{
-              closed: { d: 'M 2 2.5 L 20 2.5' },
-              open: { d: 'M 3 16.5 L 17 2.5' },
+              closed: { d: "M 2 2.5 L 20 2.5" },
+              open: { d: "M 3 16.5 L 17 2.5" },
             }}
           />
           <Path
@@ -79,8 +87,8 @@ export default function Nav() {
 
           <Path
             variants={{
-              closed: { d: 'M 2 16.346 L 20 16.346' },
-              open: { d: 'M 3 2.5 L 17 16.346' },
+              closed: { d: "M 2 16.346 L 20 16.346" },
+              open: { d: "M 3 2.5 L 17 16.346" },
             }}
           />
         </svg>
