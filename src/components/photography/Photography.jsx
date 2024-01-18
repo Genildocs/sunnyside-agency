@@ -6,11 +6,11 @@ export default function Photography() {
     <section>
       <picture className="picture_photography">
         <source
-          srcSet="src/assets/desktop/image-photography.jpg"
+          srcSet="../../assets/desktop/image-photography.jpg"
           media="(min-width: 500px)"
         />
         <img
-          src="src/assets/mobile/image-photography.jpg"
+          src="../../assets/mobile/image-photography.jpg"
           alt="imagem de um ovo"
         />
       </picture>
