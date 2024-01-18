@@ -6,11 +6,11 @@ export default function GraphicDesign() {
     <section>
       <picture className="picture_graphic">
         <source
-          srcSet="/assets/desktop/image-graphic-design.jpg"
+          srcSet="./assets/desktop/image-graphic-design.jpg"
           media="(min-width: 500px)"
         />
         <img
-          src="/assets/mobile/image-graphic-design.jpg"
+          src="./assets/mobile/image-graphic-design.jpg"
           alt="imagem de um ovo"
         />
       </picture>
