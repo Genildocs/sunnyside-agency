@@ -6,7 +6,7 @@ section {
     }
   }
 
-  .transform_text {
+  .stand_text {
     margin: 5rem 0;
     text-align: center;
     padding: 0 2rem;
@@ -41,7 +41,7 @@ section {
         content: '';
         position: absolute;
         bottom: -2px;
-        background-color: var(--Yellow);
+        background-color: var(--Soft-red);
         width: 100%;
         border-radius: 5px;
         height: 10px;

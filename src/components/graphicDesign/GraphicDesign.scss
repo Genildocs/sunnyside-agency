@@ -1,0 +1,34 @@
+section {
+  position: relative;
+
+  .picture_graphic {
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .graphic_text {
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+    right: 5%;
+    text-align: center;
+
+    h2 {
+      color: var(--Dark-desaturated-cyan);
+      font-family: 'Fraunces', serif;
+      font-size: 3rem;
+      font-weight: 800;
+    }
+
+    p {
+      color: var(--Dark-desaturated-cyan);
+      font-family: 'Barlow', sans-serif;
+      font-size: 1.6rem;
+      margin-top: 2rem;
+    }
+  }
+}
