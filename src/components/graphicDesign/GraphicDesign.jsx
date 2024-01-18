@@ -1,16 +1,16 @@
 import React from 'react';
 import './GraphicDesign.scss';
-import x from '../../assets/mobile'
+
 export default function GraphicDesign() {
   return (
     <section>
       <picture className="picture_graphic">
         <source
-          srcSet="../../assets/desktop/image-graphic-design.jpg"
+          srcSet="/assets/desktop/image-graphic-design.jpg"
           media="(min-width: 500px)"
         />
         <img
-          src="../../assets/mobile/image-graphic-design.jpg"
+          src="/assets/mobile/image-graphic-design.jpg"
           alt="imagem de um ovo"
         />
       </picture>
