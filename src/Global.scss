@@ -46,3 +46,10 @@ html {
 //   font-weight: 600;
 //   font-style: normal;
 // }
+
+.systemGrid_Desktop {
+  @media (min-width: 993px) {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

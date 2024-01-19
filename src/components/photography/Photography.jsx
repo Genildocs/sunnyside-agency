@@ -4,7 +4,7 @@ import Orange from "../../assets/mobile/image-photography.jpg";
 import OrangeDesktop from "../../assets/desktop/image-photography.jpg";
 export default function Photography() {
   return (
-    <section>
+    <section className="section_photography">
       <picture className="picture_photography">
         <source srcSet={OrangeDesktop} media="(min-width: 500px)" />
         <img src={Orange} alt="image of an orange" />

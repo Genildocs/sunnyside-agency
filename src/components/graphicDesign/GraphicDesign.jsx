@@ -4,7 +4,7 @@ import Cherry from "../../assets/mobile/image-graphic-design.jpg";
 import CherryDesktop from "../../assets/desktop/image-graphic-design.jpg";
 export default function GraphicDesign() {
   return (
-    <section>
+    <section className="section_graphic">
       <picture className="picture_graphic">
         <source srcSet={CherryDesktop} media="(min-width: 500px)" />
         <img src={Cherry} alt="imagem de um ovo" />

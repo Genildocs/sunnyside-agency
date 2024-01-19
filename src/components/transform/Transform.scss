@@ -1,8 +1,15 @@
-section {
+.section_transform {
+  @media (min-width: 1024px) {
+    grid-column: 1 / -1;
+    display: flex;
+    flex-direction: row-reverse;
+  }
   picture {
+    width: 50%;
     img {
       width: 100%;
       object-fit: cover;
+      display: block;
     }
   }
 
@@ -10,17 +17,25 @@ section {
     margin: 5rem 0;
     text-align: center;
     padding: 0 2rem;
+    @media (min-width: 1024px) {
+      width: 50%;
+      text-align: start;
+      padding: 10rem;
+    }
 
     h2 {
-      font-family: 'Fraunces', serif;
+      font-family: "Fraunces", serif;
       font-size: 3rem;
       font-weight: 800;
       color: var(--Very-dark-desaturated-blue);
       margin-bottom: 1.5rem;
+      @media (min-width: 1024px) {
+        width: 70%;
+      }
     }
 
     p {
-      font-family: 'Barlow', sans-serif;
+      font-family: "Barlow", sans-serif;
       font-size: 1.8rem;
       color: var(--Dark-grayish-blue);
       margin-bottom: 1.5rem;
@@ -29,7 +44,7 @@ section {
     a {
       position: relative;
       margin-bottom: 1.5rem;
-      font-family: 'Fraunces', serif;
+      font-family: "Fraunces", serif;
       text-transform: uppercase;
       font-size: 1.6rem;
       font-weight: 800;
@@ -38,7 +53,7 @@ section {
       z-index: 1;
 
       &::before {
-        content: '';
+        content: "";
         position: absolute;
         bottom: -2px;
         background-color: var(--Yellow);

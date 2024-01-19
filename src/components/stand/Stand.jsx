@@ -5,7 +5,7 @@ import CupDesktop from "../../assets/desktop/image-stand-out.jpg";
 
 export default function Stand() {
   return (
-    <section>
+    <section className="section_stand">
       <picture>
         <source srcSet={CupDesktop} media="(min-width: 500px)" />
         <img src={Cup} alt="image cup" />

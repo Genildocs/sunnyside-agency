@@ -4,7 +4,7 @@ import Eagle from "../../assets/mobile/image-transform.jpg";
 import EagleDesktop from "../../assets/desktop/image-transform.jpg";
 export default function Transform() {
   return (
-    <section>
+    <section className="section_transform">
       <picture>
         <source srcSet={EagleDesktop} media="(min-width: 500px)" />
         <img src={Eagle} alt="imagem de um ovo" />

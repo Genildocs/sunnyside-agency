@@ -1,6 +1,8 @@
-section {
+.section_graphic {
   position: relative;
-
+  @media (min-width: 1024px) {
+    grid-column: 1 / 3;
+  }
   .picture_graphic {
     img {
       display: block;
@@ -19,14 +21,14 @@ section {
 
     h2 {
       color: var(--Dark-desaturated-cyan);
-      font-family: 'Fraunces', serif;
+      font-family: "Fraunces", serif;
       font-size: 3rem;
       font-weight: 800;
     }
 
     p {
       color: var(--Dark-desaturated-cyan);
-      font-family: 'Barlow', sans-serif;
+      font-family: "Barlow", sans-serif;
       font-size: 1.6rem;
       margin-top: 2rem;
     }

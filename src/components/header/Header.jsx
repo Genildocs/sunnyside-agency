@@ -6,7 +6,7 @@ import Nav from "./Nav";
 import Title from "./Title";
 import Logo from "./Logo";
 
-export default function Header() {
+export default function Header({ desktop }) {
   const [open, setOpen] = useState(false);
 
   return (
@@ -15,7 +15,7 @@ export default function Header() {
         <div>
           <Logo open={open} />
         </div>
-        <Nav open={open} setOpen={setOpen} />
+        <Nav open={open} setOpen={setOpen} desktop={desktop} />
       </div>
       <Title />
     </motion.header>
