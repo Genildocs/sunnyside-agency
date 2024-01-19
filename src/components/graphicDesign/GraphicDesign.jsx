@@ -1,18 +1,13 @@
-import React from 'react';
-import './GraphicDesign.scss';
-
+import React from "react";
+import "./GraphicDesign.scss";
+import Cherry from "../../assets/mobile/image-graphic-design.jpg";
+import CherryDesktop from "../../assets/desktop/image-graphic-design.jpg";
 export default function GraphicDesign() {
   return (
     <section>
       <picture className="picture_graphic">
-        <source
-          srcSet="../../src/assets/desktop/image-graphic-design.jpg"
-          media="(min-width: 500px)"
-        />
-        <img
-          src="../../src/assets/mobile/image-graphic-design.jpg"
-          alt="imagem de um ovo"
-        />
+        <source srcSet={CherryDesktop} media="(min-width: 500px)" />
+        <img src={Cherry} alt="imagem de um ovo" />
       </picture>
       <div className="graphic_text">
         <h2>Graphic Design</h2>

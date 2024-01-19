@@ -1,18 +1,13 @@
 import React from "react";
 import "./Photography.scss";
-
+import Orange from "../../assets/mobile/image-photography.jpg";
+import OrangeDesktop from "../../assets/desktop/image-photography.jpg";
 export default function Photography() {
   return (
     <section>
       <picture className="picture_photography">
-        <source
-          srcSet="/src/assets/desktop/image-photography.jpg"
-          media="(min-width: 500px)"
-        />
-        <img
-          src="/src/assets/mobile/image-photography.jpg"
-          alt="image of an orange"
-        />
+        <source srcSet={OrangeDesktop} media="(min-width: 500px)" />
+        <img src={Orange} alt="image of an orange" />
       </picture>
       <div className="photography_text">
         <h2>Photography</h2>
