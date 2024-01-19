@@ -1,18 +1,13 @@
-import React from 'react';
-import './Transform.scss';
-
+import React from "react";
+import "./Transform.scss";
+import Eagle from "../../assets/mobile/image-transform.jpg";
+import EagleDesktop from "../../assets/desktop/image-transform.jpg";
 export default function Transform() {
   return (
     <section>
       <picture>
-        <source
-          srcSet="../../src/assets/desktop/image-transform.jpg"
-          media="(min-width: 500px)"
-        />
-        <img
-          src="../../src/assets/mobile/image-transform.jpg"
-          alt="imagem de um ovo"
-        />
+        <source srcSet={EagleDesktop} media="(min-width: 500px)" />
+        <img src={Eagle} alt="imagem de um ovo" />
       </picture>
       <div className="transform_text">
         <h2>Transform your brand</h2>

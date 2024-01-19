@@ -12,8 +12,7 @@ const Path = (props) => (
     {...props}
   />
 );
-export default function Nav() {
-  const [open, setOpen] = useState(false);
+export default function Nav({ open, setOpen }) {
   const menu = ["About", "Services", "Projects", "Contact"];
   const variantsUl = {
     open: {
