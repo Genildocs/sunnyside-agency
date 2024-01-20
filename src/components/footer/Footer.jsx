@@ -42,7 +42,7 @@ export default function Footer() {
           <Pinterest />
         </a>
       </div>
-      <p>© 2019 Loopstudios. All rights reserved.</p>
+      <p>© 2024 sunnyside. All rights reserved.</p>
     </motion.footer>
   );
 }
