@@ -1,16 +1,21 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import './Testimonials.scss';
-import EmilyImg from '../../assets/image-emily.jpg';
-import ThomasImg from '../../assets/image-thomas.jpg';
-import JennImg from '../../assets/image-jennie.jpg';
+import React from "react";
+import { motion } from "framer-motion";
+import "./Testimonials.scss";
+import EmilyImg from "../../assets/image-emily.jpg";
+import ThomasImg from "../../assets/image-thomas.jpg";
+import JennImg from "../../assets/image-jennie.jpg";
 export default function Testimonials() {
+  const variants = {
+    hidden: { y: 30, opacity: 0 },
+    visible: { y: 0, opacity: 1, transition: { duration: 0.9 } },
+  };
   return (
     <motion.section className="section_testimonials">
       <motion.h2
         className="title"
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1, transition: { duration: 0.3 } }}
+        initial="hidden"
+        whileInView="visible"
+        variants={variants}
         viewport={{ once: true }}
       >
         client testimonials
@@ -18,8 +23,9 @@ export default function Testimonials() {
       <motion.div className="divider d-flex">
         <motion.div
           className="director d-flex"
-          initial={{ y: 30 }}
-          whileInView={{ y: 0, transition: { duration: 0.5 } }}
+          initial="hidden"
+          whileInView="visible"
+          variants={variants}
           viewport={{ once: true }}
         >
           <img
@@ -38,8 +44,9 @@ export default function Testimonials() {
         </motion.div>
         <motion.div
           className="officer d-flex"
-          initial={{ y: 30 }}
-          whileInView={{ y: 0, transition: { duration: 0.7 } }}
+          initial="hidden"
+          whileInView="visible"
+          variants={variants}
           viewport={{ once: true }}
         >
           <img
@@ -58,8 +65,9 @@ export default function Testimonials() {
         </motion.div>
         <motion.div
           className="owner d-flex"
-          initial={{ y: 30 }}
-          whileInView={{ y: 0, transition: { duration: 0.9 } }}
+          initial="hidden"
+          whileInView="visible"
+          variants={variants}
           viewport={{ once: true }}
         >
           <img
