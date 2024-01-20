@@ -1,5 +1,44 @@
 .footer {
+  background: var(--Dark-moderate-cyan);
+  flex-direction: column;
+  gap: 3rem;
+  padding: 5rem 0;
+
   @media (min-width: 1024px) {
     grid-column: 1 / -1;
+  }
+
+  svg path {
+    fill: var(--Dark-desaturated-cyan);
+  }
+
+  .list {
+    &_menu {
+      gap: 4rem;
+      font-family: 'Barlow', sans-serif;
+      font-size: 1.8rem;
+      font-weight: 600;
+
+      &--item {
+        list-style: none;
+
+        a {
+          text-decoration: none;
+          color: var(--Dark-desaturated-cyan);
+          opacity: 0.8;
+          transition: color 0.5s ease-in-out;
+
+          &:hover {
+            color: var(--White);
+          }
+        }
+      }
+    }
+  }
+
+  .social_media {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
   }
 }

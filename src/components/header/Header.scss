@@ -1,5 +1,5 @@
 header {
-  background-image: url("../../assets/mobile/image-header.jpg");
+  background-image: url('../../assets/mobile/image-header.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 100% 100%;
@@ -9,14 +9,8 @@ header {
   padding: 2rem 1.5rem;
 
   @media (min-width: 500px) {
-    background-image: url("../../assets/desktop/image-header.jpg");
+    background-image: url('../../assets/desktop/image-header.jpg');
     background-size: cover;
     grid-column: 1 / -1;
   }
-}
-
-.d-flex {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }

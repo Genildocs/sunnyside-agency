@@ -1,5 +1,37 @@
-.section_picture {
+.picture {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 25rem));
+
   @media (min-width: 1024px) {
     grid-column: 1 / -1;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  &_milk {
+    grid-column: 1 / 2;
+  }
+
+  &_cone {
+    grid-column: 2 / 3;
+  }
+
+  &_sugar {
+    grid-column: 1 / 2;
+    @media (min-width: 1024px) {
+      grid-column: 3 / 4;
+    }
+  }
+
+  &_orange {
+    grid-column: 2 / 3;
+    @media (min-width: 1024px) {
+      grid-column: 4 / -1;
+    }
+  }
+
+  .picture_image {
+    display: block;
+    width: 100%;
+    object-fit: cover;
   }
 }

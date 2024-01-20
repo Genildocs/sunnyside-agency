@@ -1,7 +1,8 @@
-import React from "react";
-import "./Photography.scss";
-import Orange from "../../assets/mobile/image-photography.jpg";
-import OrangeDesktop from "../../assets/desktop/image-photography.jpg";
+/* eslint-disable no-unused-vars */
+import React from 'react';
+import './Photography.scss';
+import Orange from '../../assets/mobile/image-photography.jpg';
+import OrangeDesktop from '../../assets/desktop/image-photography.jpg';
 export default function Photography() {
   return (
     <section className="section_photography">
