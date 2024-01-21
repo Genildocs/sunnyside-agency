@@ -1,18 +1,24 @@
-import React from 'react';
-import './Title.scss';
-import { motion } from 'framer-motion';
+import React from "react";
+import "./Title.scss";
+import { motion } from "framer-motion";
 
 export default function Title() {
   return (
     <div className="header_title">
-      <h1>we are creatives</h1>
+      <motion.h1
+        initial={{ scale: 0 }}
+        whileInView={{ scale: 1, transition: { duration: 1 } }}
+        viewport={{ once: true }}
+      >
+        we are creatives
+      </motion.h1>
       <motion.svg
         width="36"
         height="114"
         xmlns="http://www.w3.org/2000/svg"
         initial={{ y: 0 }}
         animate={{ y: 10 }}
-        transition={{ duration: 0.5, repeat: Infinity, repeatType: 'reverse' }}
+        transition={{ duration: 0.5, repeat: Infinity, repeatType: "reverse" }}
       >
         <g
           stroke="#FFF"
