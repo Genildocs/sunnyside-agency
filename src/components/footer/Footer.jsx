@@ -1,10 +1,10 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import './Footer.scss';
-import Facebook from './socialMedia/Facebook';
-import Twitter from './socialMedia/Twitter';
-import Pinterest from './socialMedia/Pinterest';
-import Instagram from './socialMedia/Instagram';
+import React from "react";
+import { motion } from "framer-motion";
+import "./Footer.scss";
+import Facebook from "./socialMedia/Facebook";
+import Twitter from "./socialMedia/Twitter";
+import Pinterest from "./socialMedia/Pinterest";
+import Instagram from "./socialMedia/Instagram";
 export default function Footer() {
   return (
     <motion.footer className="footer d-flex">
@@ -29,20 +29,20 @@ export default function Footer() {
         </ul>
       </div>
       <div className="social_media">
-        <a href="#">
+        <a href="#" aria-label="link for facebook">
           <Facebook />
         </a>
-        <a href="#">
+        <a href="#" aria-label="link for instagram">
           <Instagram />
         </a>
-        <a href="#">
+        <a href="#" aria-label="link for twitter">
           <Twitter />
         </a>
-        <a href="#">
+        <a href="#" aria-label="link for pinterest">
           <Pinterest />
         </a>
       </div>
-      <p>© 2024 sunnyside. All rights reserved.</p>
+      <p className="copyright">© 2024 sunnyside. All rights reserved.</p>
     </motion.footer>
   );
 }

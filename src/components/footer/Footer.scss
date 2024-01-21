@@ -15,7 +15,7 @@
   .list {
     &_menu {
       gap: 4rem;
-      font-family: 'Barlow', sans-serif;
+      font-family: "Barlow", sans-serif;
       font-size: 1.8rem;
       font-weight: 600;
 
@@ -40,5 +40,11 @@
     display: flex;
     align-items: center;
     gap: 2rem;
+  }
+
+  .copyright {
+    font-family: "Barlow", sans-serif;
+    font-size: 1.2rem;
+    color: var(--Very-dark-desaturated-blue);
   }
 }

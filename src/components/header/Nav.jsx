@@ -68,7 +68,12 @@ export default function Nav({ open, setOpen, desktop }) {
         ))}
       </motion.ul>
       {!desktop && (
-        <button onClick={() => setOpen(!open)} className="btn_menu">
+        <button
+          onClick={() => setOpen(!open)}
+          className="btn_menu"
+          id="menu_button"
+          aria-label="Menu Button"
+        >
           <svg width={23} height={23} viewBox="0 0 23 23">
             <Path
               variants={{
