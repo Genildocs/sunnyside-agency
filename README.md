@@ -1,8 +1,31 @@
-# React + Vite
+# Sunnyside agency landing page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![](./public/desktop-preview.jpg)
 
-Currently, two official plugins are available:
+This challenge will be a perfect test of your layout and responsive skills. There's a tiny bit of JS for the mobile menu, but the focus is HTML & CSS.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### The challenge
+
+- View the optimal layout for the site depending on their device's screen size
+- See hover states for all interactive elements on the page
+
+### Links
+
+- Solution URL: https://github.com/Genildocs/sunnyside-agency
+- Live Site URL: https://sunnyside-agency-phi-weld.vercel.app/
+
+### Built with
+
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- CSS Grid
+- Sass - For styles
+- [React](https://reactjs.org/) - JS library
+- [Vite.js](https://vitejs.dev/) - React framework
+- [Framer Motion.](https://www.framer.com/motion/) - For animations
+
+## Author
+
+- GitHub - https://github.com/Genildocs
+- Linkedin - https://www.linkedin.com/in/genildo-cerqueira-91888786/
